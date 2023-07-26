@@ -20,9 +20,11 @@ namespace RestoranDesktopApp
             DBcontext db = new DBcontext();
             string info1 = userName.Text;
             string info2 = passWord.Text;
-            
-            var obj1 = db.Users.FirstOrDefault(p => p.login == info1);
-            var obj2 = db.Users.FirstOrDefault(p => p.password == info2);
+            var obj1 = db.Users.First().login;
+            var obj2 = db.Users.First();
+
+            //var obj1 = db.Users.FirstOrDefault(p => p.login.ToString().Equals(info1.ToString()));
+            //var obj2 = db.Users.FirstOrDefault(p => p.password.ToString().Equals(info2.ToString()));
 
 
             if (obj1 != null && obj2 != null)

@@ -20,7 +20,9 @@ namespace RestoranDesktopApp.MigrationData
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("postgres://kikitjqj:mqCl4CqXPeZdaiHaOujDr8ITXT1vSK_9@mahmud.db.elephantsql.com/kikitjqj");
+            optionsBuilder.UseNpgsql("Server = localhost; User id = postgres; Password = 12345678mn; Database = res123");
+
+
         }
 
     }

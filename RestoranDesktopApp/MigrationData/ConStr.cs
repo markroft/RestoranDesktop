@@ -8,5 +8,6 @@ namespace RestoranDesktopApp.MigrationData
 {
     internal class ConStr
     {
+
     }
 }

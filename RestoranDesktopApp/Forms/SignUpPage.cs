@@ -31,7 +31,8 @@ namespace RestoranDesktopApp
             user.login = username.Text;
             user.password = password.Text;
             user.RegistrationTime = DateTime.Now.ToString();
-
+            Random r = new Random();
+            user.id = r.Next(1, 1000000);
             db.Users.Add(user);
             db.SaveChanges();
             MessageBox.Show("User Successfully Added");
